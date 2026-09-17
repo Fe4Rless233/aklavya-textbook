@@ -1,0 +1,149 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eef2ff 0%, #f8fafc 30%);
+  color: #0f172a;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+.page-header {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0.5rem 0 0;
+  color: #475569;
+}
+
+.reader-card {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 1rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 12px 30px -24px #0f172a;
+}
+
+.tabs-panel {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 0.85rem;
+  background: #f8fafc;
+}
+
+.panel-title {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  color: #334155;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tab {
+  border: 1px solid #dbe3ef;
+  background: #fff;
+  color: #0f172a;
+  border-radius: 0.65rem;
+  padding: 0.65rem 0.8rem;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.tab:hover {
+  border-color: #93c5fd;
+  background: #eff6ff;
+}
+
+.tab.active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.tab:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 1px;
+}
+
+.viewer-panel {
+  min-width: 0;
+}
+
+.viewer-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.current-book {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.open-pdf {
+  text-decoration: none;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.open-pdf:hover {
+  text-decoration: underline;
+}
+
+.viewer {
+  width: 100%;
+  min-height: 78vh;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  background: #fff;
+}
+
+.empty-state {
+  margin: 0.75rem 0 0;
+  color: #991b1b;
+}
+
+@media (max-width: 880px) {
+  .reader-card {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    text-align: center;
+  }
+}

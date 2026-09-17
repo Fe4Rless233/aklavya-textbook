@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aklavya Textbooks</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="page-header">
+        <h1>Aklavya Textbooks</h1>
+        <p class="subtitle">Pick a textbook and scroll through it right on this page.</p>
+      </header>
+
+      <section class="reader-card" aria-label="Textbook reader">
+        <aside class="tabs-panel">
+          <h2 class="panel-title">Textbooks</h2>
+          <div id="tabs" class="tabs" role="tablist" aria-label="Textbooks"></div>
+          <p id="empty-state" class="empty-state" hidden>
+            Add your PDF files in <code>/pdfs</code> and update <code>script.js</code>.
+          </p>
+        </aside>
+
+        <div class="viewer-panel" id="viewer-panel" role="tabpanel">
+          <div class="viewer-toolbar">
+            <span id="current-book" class="current-book">No textbook selected</span>
+            <a id="open-pdf" class="open-pdf" href="#" target="_blank" rel="noopener noreferrer">Open PDF</a>
+          </div>
+          <iframe
+            id="viewer"
+            class="viewer"
+            title="Textbook PDF viewer"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
