@@ -1,7 +1,7 @@
 const textbooks = [
   { title: 'AP Barons Stats 2027', file: 'pdfs/AP_Statistics_Premium,_2027_-_Martin_Sternstein (1)_compressed.pdf' },
   { title: 'Writing and Reading Across the Curriculum', file: 'pdfs/Laurence Behrens, Leonard J. Rosen - Writing and Reading Across the Curriculum [RENTAL EDITION].pdf' },
-  { title: 'M_ Business', file: 'pdfs/M_ Business, 7e  -  O_C_ Ferrell, Geoffrey A_ Hirt, Linda Ferrell  -  7th, 2021  -  McGraw Hill _compressed.pdf' },
+  { title: 'M_ Business', file: 'pdfs/M_ Business, 7e.pdf' },
 ];
 
 const tabs = document.getElementById('tabs');
