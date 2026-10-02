@@ -3,6 +3,7 @@ const textbooks = [
   { title: 'Writing and Reading Across the Curriculum', file: 'pdfs/Laurence Behrens, Leonard J. Rosen - Writing and Reading Across the Curriculum [RENTAL EDITION].pdf' },
   { title: 'M_ Business', file: 'pdfs/M_ Business, 7e.pdf' },
   { title: 'Chemistry for Today (Archive.org)', file: 'https://archive.org/embed/chemistryfortoda0000seag_e3o6' },
+  { title: 'Biochemistry textbook', file: 'https://compress-pdf.isbac.info/download/compresspdf' },
 ];
 
 const tabs = document.getElementById('tabs');
